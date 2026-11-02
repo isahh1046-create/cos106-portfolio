@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Student portfolio and academic management website of Harun Isah, MIVA Open University.">
+  <title>Contact | Harun Isah</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="navbar container">
+    <a href="index.html" class="logo">Harun<span>Isah</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">&#9776;</button>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About Me</a></li>
+      <li><a href="projects.html" class="nav-link">Projects</a></li>
+      <li><a href="planner.html" class="nav-link">Planner</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <h1>Contact Me</h1>
+      <p>Fill in the form below and I'll get back to you as soon as possible.</p>
+    </div>
+  </section>
+
+  <section class="section container contact-wrap">
+    <div class="card contact-card reveal">
+      <form id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="cName">Name</label>
+          <input type="text" id="cName" name="name" placeholder="Your full name">
+          <small class="field-error" id="errName"></small>
+        </div>
+        <div class="form-group">
+          <label for="cEmail">Email Address</label>
+          <input type="email" id="cEmail" name="email" placeholder="you@example.com">
+          <small class="field-error" id="errEmail"></small>
+        </div>
+        <div class="form-group">
+          <label for="cPhone">Phone Number</label>
+          <input type="tel" id="cPhone" name="phone" placeholder="e.g. 08012345678">
+          <small class="field-error" id="errPhone"></small>
+        </div>
+        <div class="form-group">
+          <label for="cMsg">Message</label>
+          <textarea id="cMsg" name="message" rows="5" placeholder="Type your message here..."></textarea>
+          <small class="field-error" id="errMsg"></small>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+        <p id="formStatus" class="form-status" role="status"></p>
+      </form>
+    </div>
+
+    <aside class="card contact-info reveal">
+      <h2>Other Ways to Reach Me</h2>
+      <ul class="info-list">
+        <li><span>&#128231;</span> Email: <a href="mailto:H.isah5456@miva.edu.ng">H.isah5456@miva.edu.ng</a></li>
+        <li><span>&#128222;</span> Phone: <a href="tel:+2348101427594">+234 810 142 7594</a></li>
+        <li><span>&#128279;</span> GitHub: <a href="https://github.com/isahh1046-create" target="_blank" rel="noopener">github.com/isahh1046-create</a></li>
+        <li><span>&#128205;</span> Location: Nigeria</li>
+      </ul>
+    </aside>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> Harun Isah &mdash; COS 106 Practical Project, MIVA Open University</p>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="https://github.com/isahh1046-create" target="_blank" rel="noopener">GitHub</a></li>
+    </ul>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

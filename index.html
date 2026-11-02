@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Student portfolio and academic management website of Harun Isah, MIVA Open University.">
+  <title>Home | Harun Isah</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="navbar container">
+    <a href="index.html" class="logo">Harun<span>Isah</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">&#9776;</button>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About Me</a></li>
+      <li><a href="projects.html" class="nav-link">Projects</a></li>
+      <li><a href="planner.html" class="nav-link">Planner</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <!-- HERO -->
+  <section class="hero container">
+    <div class="hero-text reveal">
+      <p class="eyebrow">Cyber Security Student &middot; MIVA Open University</p>
+      <h1>Hi, I'm <span class="accent">Harun Isah</span></h1>
+      <p class="welcome-msg">Welcome to my academic portfolio! I'm a passionate learner exploring the world of web technologies, software development, and digital problem-solving.</p>
+      <div class="hero-actions">
+        <a href="projects.html" class="btn btn-primary">View My Projects</a>
+        <a href="contact.html" class="btn btn-outline">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-photo reveal">
+      <img src="images/harun.jpg" alt="Photograph of Harun Isah" class="avatar-img">
+    </div>
+  </section>
+
+  <!-- BIO / QUICK FACTS -->
+  <section class="section container">
+    <h2 class="section-title">Brief Biography</h2>
+    <div class="two-col">
+      <div class="card reveal">
+        <p>My name is <strong>Harun Isah</strong>. I am a Cyber Security undergraduate at MIVA Open University with a growing passion for securing systems and the web. I enjoy building things that live on the internet — from simple web pages to interactive applications that solve everyday problems.</p>
+        <p>When I'm not studying, I spend my time practising web development, reading about technology trends, and working on personal projects that sharpen my skills.</p>
+      </div>
+      <div class="card reveal">
+        <h3>Quick Facts</h3>
+        <table class="facts-table">
+          <tr><th>Full Name</th><td>Harun Isah</td></tr>
+          <tr><th>University</th><td>MIVA Open University</td></tr>
+          <tr><th>Programme</th><td>B.Sc. Cyber Security, MIVA Open University</td></tr>
+          <tr><th>Focus</th><td>Web Design &amp; Development</td></tr>
+          <tr><th>Location</th><td>Nigeria</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- HIGHLIGHTS -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">What You'll Find Here</h2>
+      <div class="grid-3">
+        <article class="card card-hover reveal">
+          <div class="card-icon">&#128187;</div>
+          <h3>My Work</h3>
+          <p>A collection of projects I have built while learning HTML, CSS and JavaScript, with descriptions and screenshots.</p>
+          <a href="projects.html" class="text-link">Browse projects &rarr;</a>
+        </article>
+        <article class="card card-hover reveal">
+          <div class="card-icon">&#128197;</div>
+          <h3>Academic Planner</h3>
+          <p>An interactive task manager where I plan my assignments, tests and study sessions. Add, complete and delete tasks.</p>
+          <a href="planner.html" class="text-link">Open planner &rarr;</a>
+        </article>
+        <article class="card card-hover reveal">
+          <div class="card-icon">&#128231;</div>
+          <h3>Get In Touch</h3>
+          <p>Have a question, feedback, or an opportunity? Send me a message through the contact form on this site.</p>
+          <a href="contact.html" class="text-link">Contact me &rarr;</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- MULTIMEDIA -->
+  <section class="section container">
+    <h2 class="section-title">Featured Video &amp; Audio</h2>
+    <div class="two-col">
+      <figure class="card media-card reveal">
+        <figcaption><strong>Sample video</strong> &mdash; a short clip embedded with the HTML5 <code>&lt;video&gt;</code> element.</figcaption>
+        <video controls preload="metadata" poster="">
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </figure>
+      <figure class="card media-card reveal">
+        <figcaption><strong>Sample audio</strong> &mdash; an audio clip embedded with the HTML5 <code>&lt;audio&gt;</code> element.</figcaption>
+        <audio controls preload="metadata">
+          <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+          Your browser does not support the audio tag.
+        </audio>
+      </figure>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> Harun Isah &mdash; COS 106 Practical Project, MIVA Open University</p>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+    </ul>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

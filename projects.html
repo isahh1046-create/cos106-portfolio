@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Student portfolio and academic management website of Harun Isah, MIVA Open University.">
+  <title>Projects | Harun Isah</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="navbar container">
+    <a href="index.html" class="logo">Harun<span>Isah</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">&#9776;</button>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About Me</a></li>
+      <li><a href="projects.html" class="nav-link">Projects</a></li>
+      <li><a href="planner.html" class="nav-link">Planner</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <h1>My Projects</h1>
+      <p>A selection of projects built while learning web technologies.</p>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="grid-3">
+
+      <article class="card project-card reveal">
+        <div class="screenshot shot-1" role="img" aria-label="Screenshot of Password Strength Checker">
+          <div class="mock-bar"><span></span><span></span><span></span></div>
+          <div class="mock-body">
+            <div class="mock-task" style="width:85%"></div><div class="mock-task" style="width:60%;opacity:.6"></div><div class="mock-task" style="width:40%;opacity:.35"></div>
+          </div>
+        </div>
+        <div class="project-body">
+          <h2>Password Strength Checker</h2>
+          <p>A web tool that analyses passwords in real time and scores their strength (weak, fair, strong) based on length, uppercase letters, numbers and special characters. Built to promote strong password habits.</p>
+          <ul class="tag-list"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Security</li></ul>
+          <div class="project-links">
+            <a href="planner.html" class="btn btn-primary btn-sm">Live Demo</a>
+            <a href="https://github.com/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card project-card reveal">
+        <div class="screenshot shot-2" role="img" aria-label="Screenshot of Caesar Cipher Tool">
+          <div class="mock-bar"><span></span><span></span><span></span></div>
+          <div class="mock-hero"><div class="mock-line"></div><div class="mock-line short"></div></div>
+        </div>
+        <div class="project-body">
+          <h2>Caesar Cipher Tool</h2>
+          <p>An encryption web app that demonstrates classical cryptography. Users type a message, choose a shift key, and instantly see it encrypted or decrypted &mdash; a first step toward understanding how modern encryption works.</p>
+          <ul class="tag-list"><li>HTML</li><li>CSS Grid</li><li>JavaScript</li><li>Cryptography</li></ul>
+          <div class="project-links">
+            <a href="https://github.com/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Demo</a>
+            <a href="https://github.com/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card project-card reveal">
+        <div class="screenshot shot-3" role="img" aria-label="Screenshot of Phishing Awareness Quiz">
+          <div class="mock-bar"><span></span><span></span><span></span></div>
+          <div class="mock-calc">
+            <div class="mock-display"></div>
+            <div class="mock-keys"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          </div>
+        </div>
+        <div class="project-body">
+          <h2>Phishing Awareness Quiz</h2>
+          <p>An interactive quiz that teaches users how to spot phishing emails and fake websites. It presents realistic scenarios, gives instant feedback on each answer, and shows a final security score.</p>
+          <ul class="tag-list"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Awareness</li></ul>
+          <div class="project-links">
+            <a href="https://github.com/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Demo</a>
+            <a href="https://github.com/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> Harun Isah &mdash; COS 106 Practical Project, MIVA Open University</p>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+    </ul>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Student portfolio and academic management website of Harun Isah, MIVA Open University.">
+  <title>Academic Planner | Harun Isah</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="navbar container">
+    <a href="index.html" class="logo">Harun<span>Isah</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">&#9776;</button>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About Me</a></li>
+      <li><a href="projects.html" class="nav-link">Projects</a></li>
+      <li><a href="planner.html" class="nav-link">Planner</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <h1>Academic Planner</h1>
+      <p>Add, complete and delete your academic tasks. Tasks are saved in your browser automatically.</p>
+    </div>
+  </section>
+
+  <section class="section container planner-wrap">
+    <div class="card planner-card reveal">
+      <form id="taskForm" class="task-form" novalidate>
+        <input type="text" id="taskInput" placeholder="e.g. Submit COS 106 assignment" autocomplete="off" maxlength="120">
+        <select id="taskPriority" aria-label="Task priority">
+          <option value="high">High priority</option>
+          <option value="medium" selected>Medium priority</option>
+          <option value="low">Low priority</option>
+        </select>
+        <button type="submit" class="btn btn-primary">Add Task</button>
+      </form>
+      <p id="taskError" class="form-error" role="alert"></p>
+
+      <div class="planner-stats">
+        <span class="stat-chip">Total: <strong id="statTotal">0</strong></span>
+        <span class="stat-chip">Completed: <strong id="statDone">0</strong></span>
+        <span class="stat-chip">Pending: <strong id="statPending">0</strong></span>
+      </div>
+
+      <div class="filter-bar" role="group" aria-label="Filter tasks">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="pending">Pending</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+        <button class="filter-btn danger" id="clearCompleted">Clear Completed</button>
+      </div>
+
+      <ul id="taskList" class="task-list" aria-live="polite"></ul>
+      <p id="emptyMsg" class="empty-msg">No tasks yet. Add your first task above!</p>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> Harun Isah &mdash; COS 106 Practical Project, MIVA Open University</p>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+    </ul>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
